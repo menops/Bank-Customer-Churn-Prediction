@@ -62,9 +62,9 @@ See screenshots below
 
 
 ### 4. Explainability with SHAP
-Used and Applied SHAP (SHapley Additive exPlanations) to interpret model predictions and identify the factors driving customer churn. Generated both global feature importance insights and customer-level explanations, enabling business stakeholders to understand and trust the model's recommendations.
+I Used and Applied SHAP (SHapley Additive exPlanations) to interpret model predictions and identify the factors driving customer churn. Generated both global feature importance insights and customer-level explanations, enabling business stakeholders to understand and trust the model's recommendations.
 
-**Top 5 churn drivers:**
+**The Top 5 churn drivers:**
 1. Age (40–60 segment highest risk)
 2. Number of products held
 3. Active member status
@@ -91,38 +91,76 @@ I used AI to generate short explanations and insights that accompany charts and 
 
 ## Interactive Dashboard — Python (Matplotlib)
 
-The analysis is presented across 3 professional dashboard pages
-generated entirely in Python — no BI tool required. Each page
-was designed to mirror an executive reporting workflow inside
-a retail bank.
+The analysis is presented across 3 professional dashboard pages generated entirely in Python — no BI tool required. Each page
+was designed to mirror an executive reporting workflow inside a retail bank.
 
-**Page 1 — Executive Overview**
-KPI cards (total customers, churn rate, high-risk count, avg
-churn probability), churn breakdown by geography, product count,
-and active vs inactive member status.
+**Page 1 — The Executive Overview**
+Here , you can see from the image below the KPI cards (total customers, churn rate, high-risk count, avg churn probability), churn breakdown by geography, product count, and active vs inactive member status.
 
-![Executive Overview](images/dashboard_page1_executive_overview.png)
+<img width="2191" height="1720" alt="dashboard_page1_executive_overview" src="https://github.com/user-attachments/assets/19a952db-a5ed-4677-809b-fcb7c93eaced" />
 
-**Page 2 — Customer Risk Segmentation**
-Scatter plot of all 10,000 customers mapped by Age vs Balance
-and coloured by risk tier (High / Medium / Low), alongside a
-ranked table of the 15 highest-risk customers with their
-churn probabilities.
+**Page 2 — The Customer Risk Segmentation**
+A Scatter plot of all 10,000 customers mapped by Age vs Balance and coloured by risk tier (High / Medium / Low), alongside a ranked table of the 15 highest-risk customers with their churn probabilities.
 
-![Risk Segmentation](images/dashboard_page2_risk_segmentation.png)
+<img width="2686" height="1370" alt="dashboard_page2_risk_segmentation" src="https://github.com/user-attachments/assets/62ec2e9d-e869-4bd1-bba9-de3e16c40e2a" />
 
 **Page 3 — AI Model Insights**
-XGBoost feature importance chart showing the top 10 churn
-drivers, a model performance comparison table across all 3
-models, and an AI-generated executive summary with retention
-strategy recommendations.
+Here we have XGBoost featuring importance chart showing the top 10 churn drivers, a model performance comparison table across all 3 models, and an AI-generated executive summary with retention strategy recommendations.
 
-![AI Model Insights](images/dashboard_page3_ai_model_insights.png)
+<img width="2570" height="1686" alt="dashboard_page3_ai_model_insights" src="https://github.com/user-attachments/assets/639cad9b-e576-42b7-a6a5-f28385a9e4a9" />
 
+**In Summary**
+> All dashboards generated using Python (matplotlib).
+> Executive summaries written using AI prompt engineering with Claude and ChatGPT.
 
+## Key findings
 
+- Overall churn rate: **20.4%** of 10,000 customers
+- Germany segment churn: **32%** — double the French/Spanish rate
+- Customers with 3–4 products: **83% churn rate** (paradox of over-banking)
+- Inactive members churn at **27%** vs 14% for active members
+- High-balance customers (>€100k) show disproportionate churn risk
 
+## Repository structure
 
+```
+bank-customer-churn-prediction/
+│
+├── data/
+│   └── Churn_Modelling.csv          # Raw dataset (from Kaggle)
+│
+├── notebooks/
+│   └── churn_analysis.ipynb         # Full analysis notebook
+│
+├── outputs/
+│   ├── churn_eda.png                # EDA visualisation
+│   ├── shap_importance.png          # SHAP feature importance chart
+│   └── churn_powerbi_data.xlsx      # Export for Power BI
+│
+├── dashboard/
+│   └── churn_dashboard.pdf          # Power BI dashboard export
+│
+├── ai_prompts/
+│   └── prompts_used.md              # All AI prompts used in this project
+│
+└── README.md
+```
+
+---
+
+## AI prompts used
+
+All Claude and ChatGPT prompts used to generate insights, executive summaries, and retention strategies are documented in `/ai_prompts/prompts_used.md` — demonstrating a structured, repeatable AI prompt engineering workflow.
+
+## About this project
+
+Built as part of a financial analytics portfolio targeting Data Analytics, Business Intelligence, and SAP Analytics roles in the banking and financial services sector across Europe, the USA, and Africa.
+
+**Skills demonstrated:** Python · Machine Learning · XGBoost · SHAP · Power BI · SQL · ETL · AI Prompt Engineering · Data Storytelling · Banking Domain Knowledge
+
+---
+
+*Feedback and collaboration welcome — connect with me on LinkedIn.*
 
 
 
