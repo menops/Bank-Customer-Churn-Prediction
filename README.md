@@ -1,6 +1,6 @@
 # AI-Assisted Predictive Customer Churn Modeling
 
-I worked on this project for an end-to-end analytics in a banking context, combining machine learning with AI tools to generate insights that  a retention team could use. 
+Developed a reproducible Python-based analytical workflow to predict customer churn using machine learning techniques. Conducted exploratory data analysis, feature engineering, model evaluation, and SHAP-based explainability to generate transparent business insights and retention recommendations. 
 
 ## Project overview
 This project predicts which bank customers are likely to churn (leave the bank). Here i am making use of machine learning, and translates model outputs into executive-ready business intelligence. It is designed to mirror a real-world analytics workflow inside a retail bank; from raw data ingestion through to a boardroom-ready through Python visualization libraries like Matplotlib, Seaborn, Plotly, Streamlit with AI-generated narrative commentary. Future improvements include migrating the visualizations to Power BI or Tableau to provide a more interactive business-facing dashboard experience.
