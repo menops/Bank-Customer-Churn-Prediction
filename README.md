@@ -1,4 +1,4 @@
-# Bank-customer-churn-prediction
+# AI-Assisted Predictive Customer Churn Modeling
 
 I worked on this project for an end-to-end analytics in a banking context, combining machine learning with AI tools to generate insights that  a retention team could use. 
 
